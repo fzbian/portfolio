@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fzbian&#39;s portfolio</title>
+    <link>http://www.example.com/</link>
+    <description>Recent content on fzbian&#39;s portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>http://www.example.com/about-me/</link>
+      <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/about-me/</guid>
+      <description>At the moment I am a self-taught student that in my childhood and adolescence I have explored many technologies that have helped me to develop my professional life.
+I like to be curious with technologies in order to create new things, innovate, repair and help where I can.
+I started when I was 14 years old when I learned the Pawn programming language, a language based on C, I used this language to create game servers at the time and have fun.</description>
+    </item>
+    
+    <item>
+      <title>Grasapi</title>
+      <link>http://www.example.com/projects/grasapi/</link>
+      <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/projects/grasapi/</guid>
+      <description>GrasapiLink to headingMeme generator is a code created with the simple purpose of learning how image management works in this language, this project is quite simple.
+API ReferenceLink to headingCustom MemeLink to headingIn Custom Meme we will indicate the text at the top, the text at the bottom and the url of the image, the api will return the meme done.
+How to useLink to headingGET /?</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://www.example.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/contact/</guid>
+      <description>Send me an email at hello@fzbian.me.</description>
+    </item>
+    
+  </channel>
+</rss>

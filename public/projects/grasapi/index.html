@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+  Grasapi · fzbian&#39;s portfolio
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Fabian Martin">
+<meta name="description" content="Meme generator returns an image with the parameters indicated in the URL, perfect for use as an API.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Grasapi"/>
+<meta name="twitter:description" content="Meme generator returns an image with the parameters indicated in the URL, perfect for use as an API."/>
+
+<meta property="og:title" content="Grasapi" />
+<meta property="og:description" content="Meme generator returns an image with the parameters indicated in the URL, perfect for use as an API." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.example.com/projects/grasapi/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2022-12-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-12-13T00:00:00+00:00" />
+
+
+
+
+
+<link rel="canonical" href="http://www.example.com/projects/grasapi/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.7f9d180e3b3bebba9ba80d55eed1255c35e00764872854736d6ad7db38884ffc.css" integrity="sha256-f50YDjs767qbqA1V7tElXDXgB2SHKFRzbWrX2ziIT/w=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.216e36d3eaf6f4cdfd67dc1200c49a8169e6478102977b3e9ac51a064c57054c.css" integrity="sha256-IW420&#43;r29M39Z9wSAMSagWnmR4ECl3s&#43;msUaBkxXBUw=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.107.0">
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      fzbian&#39;s portfolio
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about-me/">About me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://www.example.com/projects/grasapi/">
+          Grasapi
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="grasapi">
+  Grasapi
+  <a class="heading-link" href="#grasapi">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Meme generator is a code created with the simple purpose of learning how image management works in this language, this project is quite simple.</p>
+<h2 id="api-reference">
+  API Reference
+  <a class="heading-link" href="#api-reference">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h4 id="custom-meme">
+  Custom Meme
+  <a class="heading-link" href="#custom-meme">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>In Custom Meme we will indicate the text at the top, the text at the bottom and the url of the image, the api will return the meme done.</p>
+<h4 id="how-to-use">
+  How to use
+  <a class="heading-link" href="#how-to-use">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="">  GET /?top=top/?bottom=bottom/?url=url
+</span></span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>top</code></td>
+<td style="text-align:left"><code>string</code></td>
+<td style="text-align:left">The text above the image</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>bottom</code></td>
+<td style="text-align:left"><code>string</code></td>
+<td style="text-align:left">The text below the image</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>url</code></td>
+<td style="text-align:left"><code>string</code></td>
+<td style="text-align:left">The URL of the image to use</td>
+</tr>
+</tbody>
+</table>
+<h4 id="example">
+  Example
+  <a class="heading-link" href="#example">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Input</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="">  GET /custom/?top=Go&amp;bottom=Is%20the%20best%20language&amp;url=https://nwdistrict.ifas.ufl.edu/nat/files/2021/01/Groundhog.jpg
+</span></span></span></code></pre></div><p>Output</p>
+<p><img src="http://imgfz.com/i/MUN7gSd.jpg" alt=""></p>
+<h4 id="local-memes">
+  Local Memes
+  <a class="heading-link" href="#local-memes">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>In this function you will send what meme template you want and the parameters you are given.</p>
+<h4 id="how-to-use-1">
+  How to use
+  <a class="heading-link" href="#how-to-use-1">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="">  GET /meme/params
+</span></span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>meme</code></td>
+<td style="text-align:left"><code>string</code></td>
+<td style="text-align:left">The meme template you want to use</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>params</code></td>
+<td style="text-align:left"><code>string</code></td>
+<td style="text-align:left">Depending on the meme you will be asked for several parameters</td>
+</tr>
+</tbody>
+</table>
+<h4 id="templates">
+  Templates
+  <a class="heading-link" href="#templates">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">ID</th>
+<th style="text-align:left">Preview</th>
+<th style="text-align:left">Params</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>change_my_mind</code></td>
+<td style="text-align:left"><a href="https://github.com/fzbian/meme-generator/blob/main/memes/change_my_mind.png?raw=true">change_my_mind</a></td>
+<td style="text-align:left"><code>text</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>disappointed_black_guy</code></td>
+<td style="text-align:left"><a href="https://github.com/fzbian/meme-generator/blob/main/memes/disappointed_black_guy.png?raw=true">disappointed_black_guy</a></td>
+<td style="text-align:left"><code>text1</code>, <code>text2</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>distracted_boyfriend</code></td>
+<td style="text-align:left"><a href="https://github.com/fzbian/meme-generator/blob/main/memes/distracted_boyfriend.png?raw=true">distracted_boyfriend</a></td>
+<td style="text-align:left"><code>text1</code>, <code>text2</code>, <code>text3</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>drake</code></td>
+<td style="text-align:left"><a href="https://github.com/fzbian/meme-generator/blob/main/memes/drake.png?raw=true">drake</a></td>
+<td style="text-align:left"><code>text1</code>, <code>text2</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>expanding_brain</code></td>
+<td style="text-align:left"><a href="https://github.com/fzbian/meme-generator/blob/main/memes/expanding_brain.png?raw=true">expanding_brain</a></td>
+<td style="text-align:left"><code>text1</code>, <code>text2</code>, <code>text3</code>, <code>text4</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>jason_momoa_henry_cavil</code></td>
+<td style="text-align:left"><a href="https://github.com/fzbian/meme-generator/blob/main/memes/jason_momoa_henry_cavil.png?raw=true">jason_momoa_henry_cavil</a></td>
+<td style="text-align:left"><code>text1</code>, <code>text2</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>left_right</code></td>
+<td style="text-align:left"><a href="https://github.com/fzbian/meme-generator/blob/main/memes/left_right.png?raw=true">left_right</a></td>
+<td style="text-align:left"><code>text1</code>, <code>text2</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>running_away_balloon</code></td>
+<td style="text-align:left"><a href="https://github.com/fzbian/meme-generator/blob/main/memes/running_away_balloon.png?raw=true">running_away_balloon</a></td>
+<td style="text-align:left"><code>text1</code>, <code>text2</code>, <code>text3</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>spiderman</code></td>
+<td style="text-align:left"><a href="https://github.com/fzbian/meme-generator/blob/main/memes/spiderman.png?raw=true">spiderman</a></td>
+<td style="text-align:left"><code>text1</code>, <code>text2</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>this_is</code></td>
+<td style="text-align:left"><a href="https://github.com/fzbian/meme-generator/blob/main/memes/this_is.png?raw=true">this_is</a></td>
+<td style="text-align:left"><code>url</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>three_headed_dragon</code></td>
+<td style="text-align:left"><a href="https://github.com/fzbian/meme-generator/blob/main/memes/three_headed_dragon.png?raw=true">three_headed_dragon</a></td>
+<td style="text-align:left"><code>text1</code>, <code>text2</code>, <code>text3</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>undertaker</code></td>
+<td style="text-align:left"><a href="https://github.com/fzbian/meme-generator/blob/main/memes/undertaker.png?raw=true">undertaker</a></td>
+<td style="text-align:left"><code>text1</code>, <code>text2</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>grim_reaper_knocking_door</code></td>
+<td style="text-align:left"><a href="https://github.com/fzbian/meme-generator/blob/main/memes/grim_reaper_knocking_door.png?raw=true">grim_reaper_knocking_door</a></td>
+<td style="text-align:left"><code>url1</code>, <code>url2</code>, <code>url3</code>, <code>url4</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="example-1">
+  Example
+  <a class="heading-link" href="#example-1">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Input</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="">  GET /spiderman/?text1=Python&amp;text2=Slow
+</span></span></span></code></pre></div><p>Output</p>
+<p><img src="http://imgfz.com/i/OBaGNqh.jpeg" alt=""></p>
+<h2 id="deployment">
+  Deployment
+  <a class="heading-link" href="#deployment">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><a href="https://repl.it/github/fzbian/meme-generator"><img src="https://repl.it/badge/github/fzbian/meme-generator" alt="Run on Repl.it"></a></p>
+<p>To deploy this project run</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  go run main.go
+</span></span></code></pre></div><h2 id="acknowledgements">
+  Acknowledgements
+  <a class="heading-link" href="#acknowledgements">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://github.com/fogleman/gg">Fogleman by gg</a></li>
+<li><a href="https://github.com/AndresXLP">AndresXLP for helping me in my learning</a></li>
+</ul>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2022
+     Fabian Martin 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.27afce394fb6284f521b3fbc9f6a8326342333c3092267f3944d770489876fed.js" integrity="sha256-J6/OOU&#43;2KE9SGz&#43;8n2qDJjQjM8MJImfzlE13BImHb&#43;0="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
