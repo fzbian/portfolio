@@ -1,0 +1,3 @@
+# My Own Portfolio
+
+This is the code repository of my personal portfolio. It is made in Hugo, which is an open source static site generation tool. This means that Hugo takes content written in plain text format and converts it into a structured, well-designed website. This has several advantages, such as faster site loading speed and increased security since there are no databases that can be vulnerable to attack. In addition, Hugo is very easy to use and allows the creation of professional websites without the need for advanced programming skills. In short, Hugo is an excellent choice for creating a portfolio or any other type of static website.
